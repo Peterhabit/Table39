@@ -16,10 +16,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: .subtitle, reuseIdentifier: "myCell")
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "myCell")
         cell.textLabel?.text = "\(indexPath.row)"
         cell.detailTextLabel?.text = indexPath.description
         cell.imageView?.image = UIImage(named: "plant.png")
+        print(indexPath.description)
         return cell
     }
     

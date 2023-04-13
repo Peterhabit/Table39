@@ -21,6 +21,35 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="742"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="qtL-rs-STa" customClass="MyTableViewCell" customModule="Table39" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="48.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qtL-rs-STa" id="eX8-Hx-PPy">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="48.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIh-ex-Hbf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="48.333333333333336"/>
+                                                    <color key="backgroundColor" red="0.8345677212" green="0.91982699000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nIh-ex-Hbf" firstAttribute="leading" secondItem="eX8-Hx-PPy" secondAttribute="leading" id="GMv-zR-4fl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nIh-ex-Hbf" secondAttribute="trailing" constant="2520" id="MdB-dK-8cs"/>
+                                                <constraint firstAttribute="bottom" secondItem="nIh-ex-Hbf" secondAttribute="bottom" id="flg-Mb-lXj"/>
+                                                <constraint firstItem="nIh-ex-Hbf" firstAttribute="top" secondItem="eX8-Hx-PPy" secondAttribute="top" id="q2Y-i2-tDg"/>
+                                                <constraint firstAttribute="trailing" secondItem="nIh-ex-Hbf" secondAttribute="trailing" id="ukg-rf-vzX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myLabel" destination="nIh-ex-Hbf" id="UhA-DW-yf2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
